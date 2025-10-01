@@ -1,0 +1,9 @@
+## Interface: 11200
+## Title: Splits
+## Author: Thrunk
+## Version: 1
+## Notes: Live splits for classic wow
+## SavedVariablesPerCharacter: SplitsOptions
+
+Splits.lua
+
