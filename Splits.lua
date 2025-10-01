@@ -37,9 +37,6 @@ local raidBosses = {
         "The Four Horsemen", "Noth the Plaguebringer", "Heigan the Unclean",
         "Loatheb", "Sapphiron", "Kel'Thuzad"
     },
-	    ["Ragefire Chasm"] = {
-        "Earthborer", "General Rajaxx", "Moam", "Buru the Gorger", "Ayamiss the Hunter", "Ossirian the Unscarred"
-    },
 }
 
 local multiBossesByRaid = {
@@ -630,4 +627,5 @@ SlashCmdList["SPLITS"] = function(msg)
 	elseif msg == "" or msg =='options' or msg=="opt" then
         if OptionsFrame:IsShown() then OptionsFrame:Hide() else OptionsFrame:Show() end
     end
+
 end
