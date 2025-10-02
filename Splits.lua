@@ -37,6 +37,9 @@ local raidBosses = {
         "The Four Horsemen", "Noth the Plaguebringer", "Heigan the Unclean",
         "Loatheb", "Sapphiron", "Kel'Thuzad"
     },
+	["Lower Karazhan"] = {
+        "Moroes", "Clawlord Howlfang", "Lord Blackwald II", "Grizikil", "Brood Queen Araxxna"
+    },
 }
 
 local multiBossesByRaid = {
@@ -198,6 +201,10 @@ end
 local function InActiveRaidZone()
 	if timerRunning or runFinished then return end
     local zone = GetRealZoneText()
+	local subzone = GetSubZoneText()
+	if zone == "Tower of Karazhan" and subzone ~= "The Broken Stair" then
+        zone = "Lower Karazhan"
+    end
     if zone and raidBosses[zone] then 
 		InRaidZone = true
 		return zone 
