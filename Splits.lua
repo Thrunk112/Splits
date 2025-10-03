@@ -1,5 +1,4 @@
 --TODO:
---k10 vs k40
 --dungeons
 --strat live vs dead, dire maul, etc
 --font and size ui adjustment?
@@ -20,7 +19,7 @@ local raidBosses = {
         "Broodlord Lashlayer", "Firemaw", "Ebonroc", "Flamegor", "Chromaggus", "Nefarian" },
 	["Zul'Gurub"] = { "High Priestess Jeklik", "High Priest Venoxis",
         "High Priestess Mar'li", "Bloodlord Mandokir",
-        "Jin'do the Hexxer", "Hakkar the Soulflayer" },  
+        "Jin'do the Hexxer", "Hakkar", "High Priestess Arlokk", "High Priest Thekal" },  
     ["Tower of Karazhan"] = { "Keeper Gnarlmoon", "Ley-Watcher Incantagos",
         "Anomalus", "Echo of Medivh", "King", "Sanv Tas'dal",
         "Rupturan the Broken", "Kruul", "Mephistroth" },
@@ -52,11 +51,6 @@ local multiBossesByRaid = {
 }
 
 local bossDisplayNames = { --maybe can cut this out or make it an option. 
-	--ZG 
-    ["Hakkar the Soulflayer"] = "Hakkar",
-	["High Priestess Jeklik"]   = "Jeklik",
-    ["High Priest Venoxis"]     = "Venoxis",
-    ["High Priestess Mar'li"]   = "Mar'li",
 	--AQ20
     ["Ossirian the Unscarred"]  = "Ossirian",
 	--MC
@@ -636,3 +630,4 @@ SlashCmdList["SPLITS"] = function(msg)
     end
 
 end
+
