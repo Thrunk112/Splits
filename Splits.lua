@@ -23,7 +23,7 @@ local raidBosses = {
     ["Tower of Karazhan"] = { "Keeper Gnarlmoon", "Ley-Watcher Incantagos",
         "Anomalus", "Echo of Medivh", "King", "Sanv Tas'dal",
         "Rupturan the Broken", "Kruul", "Mephistroth" },
-    ["Temple of Ahn'Qiraj"] = {
+    ["Ahn'Qiraj"] = {
         "The Prophet Skeram", "Bug Trio", "Battleguard Sartura", "Fankriss the Unyielding",
         "Viscidus", "Princess Huhuran", "Emperor Vek'lor", "Ouro", "C'Thun"
     },
@@ -57,16 +57,15 @@ local bossDisplayNames = { --maybe can cut this out or make it an option.
 	["Sulfuron Harbinger"]      = "Sulfuron",
     ["Golemagg the Incinerator"] = "Golemagg",
     ["Majordomo Executus"]      = "Majordomo",
-	["Basalthar"] = "Twin Giants",
+	["Basalthar"] 				= "Twin Giants",
 	["Sorcerer-Thane Thaurissan"] = "Sorcerer",
 	--BWL
     ["Razorgore the Untamed"]   = "Razorgore",
     ["Vaelastrasz the Corrupt"] = "Vael",
     ["Broodlord Lashlayer"]     = "Broodlord",
 	--AQ40
-    ["The Prophet Skeram"]      = "Skeram",
+	["Battleguard Sartura"]     = "Sartura",
     ["Fankriss the Unyielding"] = "Fankriss",
-    ["Princess Huhuran"]        = "Huhuran",
 	["Emperor Vek'lor"]			= "Twin Emps",
 	--Naxx
     ["Grand Widow Faerlina"]  = "Faerlina",
@@ -630,4 +629,5 @@ SlashCmdList["SPLITS"] = function(msg)
     end
 
 end
+
 
