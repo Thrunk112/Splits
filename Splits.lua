@@ -45,7 +45,7 @@ local multiBossesByRaid = {
     ["Naxxramas"] = {
         ["The Four Horsemen"] = { "Thane Korth'azz", "Lady Blaumeux", "Highlord Mograine", "Sir Zeliek" }
     },
-    ["Temple of Ahn'Qiraj"] = {
+    ["Ahn'Qiraj"] = {
         ["Bug Trio"] = { "Lord Kri", "Princess Yauj", "Vem" }
     },
 }
@@ -629,5 +629,6 @@ SlashCmdList["SPLITS"] = function(msg)
     end
 
 end
+
 
 
