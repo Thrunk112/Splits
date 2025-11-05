@@ -194,9 +194,11 @@ end
 local function InActiveRaidZone()
 	if timerRunning or runFinished then return end
     local zone = GetRealZoneText()
-	local subzone = GetSubZoneText()
-	if zone == "Tower of Karazhan" and subzone ~= "The Broken Stair" then
-        zone = "Lower Karazhan"
+	if zone == "Tower of Karazhan" then
+		local raidCount = GetNumRaidMembers()
+		if raidCount and raidCount < 11 then
+			zone = "Lower Karazhan"
+		end
     end
     if zone and raidBosses[zone] then 
 		InRaidZone = true
@@ -629,6 +631,7 @@ SlashCmdList["SPLITS"] = function(msg)
     end
 
 end
+
 
 
 
