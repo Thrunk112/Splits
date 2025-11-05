@@ -18,7 +18,7 @@ local raidBosses = {
     ["Blackwing Lair"] = { "Razorgore the Untamed", "Vaelastrasz the Corrupt",
         "Broodlord Lashlayer", "Firemaw", "Ebonroc", "Flamegor", "Chromaggus", "Nefarian" },
 	["Zul'Gurub"] = { "High Priestess Jeklik", "High Priest Venoxis",
-        "High Priestess Mar'li", "Bloodlord Mandokir",
+         "Bloodlord Mandokir",
         "Jin'do the Hexxer", "Hakkar", "High Priestess Arlokk", "High Priest Thekal" },  
     ["Tower of Karazhan"] = { "Keeper Gnarlmoon", "Ley-Watcher Incantagos",
         "Anomalus", "Echo of Medivh", "King", "Sanv Tas'dal",
@@ -631,6 +631,7 @@ SlashCmdList["SPLITS"] = function(msg)
     end
 
 end
+
 
 
 
