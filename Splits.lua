@@ -196,7 +196,7 @@ local function InActiveRaidZone()
     local zone = GetRealZoneText()
 	if zone == "Tower of Karazhan" then
 		local raidCount = GetNumRaidMembers()
-		if raidCount and raidCount < 11 then
+		if raidCount and raidCount < 19 then
 			zone = "Lower Karazhan"
 		end
     end
@@ -593,7 +593,7 @@ RaidTimer:SetScript("OnEvent", function()
 	elseif event == "PLAYER_REGEN_DISABLED" and InRaidZone then
         StartTimerIfInRaid()
     elseif event == "CHAT_MSG_COMBAT_HOSTILE_DEATH" and arg1 then
-        local mob = string.match(arg1, "^(.-) dies")
+        local _, _, mob = string.find(arg1, "^(.-) dies")
         if mob and IsBossInActiveRaid(mob) then
             AddSplit(mob)
         end
@@ -631,6 +631,7 @@ SlashCmdList["SPLITS"] = function(msg)
     end
 
 end
+
 
 
 
